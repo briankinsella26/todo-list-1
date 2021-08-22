@@ -5,6 +5,7 @@ const router = express.Router();
 
 const dashboard = require("./controllers/dashboard.js");
 const about = require("./controllers/about.js");
+router.post("/dashboard/addtodo", dashboard.addTodo);
 
 router.get("/", dashboard.index);
 router.get("/dashboard", dashboard.index);
